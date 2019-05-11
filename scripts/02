@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+# Write a script which delete an ACTIVE user on the VM.
+
+#if [[ $UID -ne 0 ]]; then
+#	echo "Run as root"
+#	exit 1
+#fi
+
+#userdel -r 42inittest
+
+su -c "kill $(who -u | awk '{print $6}')" root

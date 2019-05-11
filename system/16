@@ -1,0 +1,7 @@
+Find the service which makes it possible to run specific tasks following a regular schedule
+
+cron = daemon to execute scheduled commands
+
+	Useful for running backup tasks etc.
+	Uses a crontab (cron table) that specifies scripts to run and the frequency
+	01 01 * * * /script to run = runs at 1:01am everyday of the month, every month, every day of the week

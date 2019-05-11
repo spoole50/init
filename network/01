@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+
+#Get list of network interfaces of the machine without any detail
+ifconfig -l

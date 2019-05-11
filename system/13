@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+#Name the command that find, in real time, currently running processes
+
+ps -A #Snapshot of all currently running processes

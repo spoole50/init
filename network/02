@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+
+printf "a) Identify Broadcast Address\n"
+ifconfig -L en0 | grep "inet" -w | rev | cut -c 1-14 | rev
+printf "\nb) Identify all IP address which are part of the same subnet\n"
+arp -a | awk '{print $2}' | tr -d "()"

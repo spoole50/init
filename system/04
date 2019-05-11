@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+#What command gives you the time since your system was last booted?
+
+last reboot

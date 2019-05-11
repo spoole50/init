@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+#Name the command that reboots the SSH service.
+
+su -c 'systemctl restart ssh' root
+#/etc/init.d/ssh restart

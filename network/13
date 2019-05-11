@@ -1,0 +1,10 @@
+nslookup 10.112.5.6
+Server:		10.51.1.253
+Address:	10.51.1.253#53
+
+6.5.112.10.in-addr.arpa	name = e1z2r5p6.42.us.org.
+
+.in-addr.arpa (Inverse Address) domain used for reverse mapping for Internet numbers = Translating IP address and hostname
+Determines which hostname is associated with an IP Address.
+Used for diagnostic or trace purposes
+https://www.the.net/tools/docs/reverse.php

@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+#Name the command that determines the state of the SSH service.
+
+systemctl status ssh

@@ -1,0 +1,68 @@
+#!/bin/bash
+
+function entertainment
+{
+	local CNTRL=0
+	local TIME_OUT=30
+	while [ "$CNTRL" -ne 6 ]
+	do
+		echo ""
+		echo "Enter Number of Entertainment Option:"
+		echo "1. Matrix"
+		echo "2. Fire"
+		echo "3. Train"
+		echo "4. Fortune"
+		echo "5. :)"
+		echo "6. Exit"
+		
+		re='^[0-9]+$'
+		read CNTRL
+
+		if ! [[ $CNTRL =~ $re ]]; then
+			echo "Plese Enter Valid Selection"
+			CNTRL=0
+		fi
+		if [ "$CNTRL" -eq 1 ] || [ "$CNTRL" -eq 2 ]; then 
+			until [ "$TIME_OUT" -le 20 ]
+			do
+				echo ""
+				echo "Please enter time (seconds) for option to run (max 20s):"
+				read TIME_OUT
+				if ! [[ $TIME_OUT =~ $re ]]; then
+					echo "Please Enter Valid Time"
+					TIME_OUT=30
+				fi
+			done
+		fi
+		if [ "$CNTRL" -eq 1 ]; then
+			timeout --foreground "$TIME_OUT"s cmatrix
+			clear
+		elif [ "$CNTRL" -eq 2 ]; then
+			timeout --foreground "$TIME_OUT"s aafire
+			clear
+		elif [ "$CNTRL" -eq 3 ]; then
+			sl
+			clear
+		elif [ "$CNTRL" -eq 4 ]; then
+			clear
+			fortune
+			sleep 5s
+			clear
+		elif [ "$CNTRL" -eq 5 ]; then
+			timeout --foreground 60s bb
+			clear
+		elif [ "$CNTRL" -eq 6 ]; then
+			clear
+			echo "Exiting - Have a Nice Day"
+			exit 1
+		else
+			clear
+			echo "Incorrect Input - Please Try again from avlaiable options"
+			sleep 1s
+			clear
+		fi
+		TIME_OUT=30
+	done
+}
+
+entertainment

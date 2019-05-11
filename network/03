@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+
+printf "Identify the MAC address of the Wi-Fi card\n"
+ifconfig | awk '/en1/{getline; print $2}'

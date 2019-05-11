@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+#List all existing users on the VM
+
+cat /etc/group | awk -F: '$3 >= 1000 && $1 != "nogroup" {print $1}' #takes all users output and cuts out ID over 1000 that is not nobody

@@ -1,0 +1,5 @@
+What file has to be modified to make it permanent?
+
+/etc/hostname
+
+the hostname command will only change temporarily, would be reset upon restart. Changing this file would make it permanent

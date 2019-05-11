@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+
+printf "Find the IP that was assigned to you by dhcp server\n"
+ifconfig | grep -A 4 en0 | grep -w inet | awk '{print $2}'

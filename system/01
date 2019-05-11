@@ -1,0 +1,9 @@
+In what file can you find the installed version of your Debian?
+
+/etc/debian_version
+will print out just the version number
+
+/etc/issue
+prints "Debian GNU/Linux 9
+
+/etc/os-release

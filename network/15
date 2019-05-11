@@ -1,0 +1,17 @@
+Make the intra.42.fr address reroute to 46.19.122.85
+
+Some newer versions of MacOS use
+/private/etc/hosts
+
+cat /etc/hosts
+
+cdn.intra.42.fr
+e1z2r5p6% vim net_15
+e1z2r5p6% cat /etc/hosts
+127.0.0.1       localhost
+255.255.255.255 broadcasthost
+::1             localhost
+
+#10.51.1.38 	cdn.intra.42.fr
+
+To change all you would have to do is edit the address to 46.19.122.85 save and possibly flush DNS cache if changes dont work immidiatley

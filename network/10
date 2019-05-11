@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+
+printf "Identify the network devices between your computer and the slash16.org (INVALID) -> google.com domain\n"
+traceroute google.com

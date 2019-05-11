@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+#List all services which are started at boot time and name this kind of services
+
+ls /etc/rc*.d #print services at all runlevels (*) K = KILL S = Start

@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+
+printf "Identify the IP address of the DNS that responds to the following url: slash16.org (INVALID) -> google.com\n"
+nslookup google.com | grep Address | awk '{print $2}' | head -1

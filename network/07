@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+
+printf "Query an external DNS server (Google = 8.8.8.8) on the slash16.org (INVALID) -> Facebook domain name\n"
+dig @8.8.8.8 +short NS facebook.com

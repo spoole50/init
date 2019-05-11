@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+#Find the command that kills the background command’s process
+
+if [[ $UID -ne 0 ]]; then
+	echo "Run as root"
+	exit 1
+fi
+
+kill -KILL $(lsof | grep tailBack.txt | awk '{print $2}') #kill [processID] to terminate background process in this case all running jobs

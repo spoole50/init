@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+#Name the command that lists the partition tables of drives?
+
+su -c 'fdisk -l' root

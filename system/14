@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+#Run the ‘tail -f /var/log/syslog‘ command in background
+
+if [[ $UID -ne 0 ]]; then
+	echo "Run as root"
+	exit 1
+fi
+
+tail -f /var/log/syslog >> tailBack.txt & #& runs in background
+#jobs -l gets list of current jobs with processID

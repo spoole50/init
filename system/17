@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+#Find the command that allows you to connect via ssh on the VM.(In parallel with the graphic session)
+
+#on mac
+#ssh -p 1111 root@127.0.0.1 #on guest machine ssh is default port 22 but in VM had to set up port forward on 1111
+
+ssh spoole@127.0.0.1

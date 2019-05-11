@@ -1,0 +1,26 @@
+# **************************************************************************** #
+#                                                                              #
+#                                                         :::      ::::::::    #
+#    ip_subnet_notes.txt                                :+:      :+:    :+:    #
+#                                                     +:+ +:+         +:+      #
+#    By: spoole <marvin@42.fr>                      +#+  +:+       +#+         #
+#                                                 +#+#+#+#+#+   +#+            #
+#    Created: 2019/03/13 13:49:41 by spoole            #+#    #+#              #
+#    Updated: 2019/03/13 13:50:07 by spoole           ###   ########.fr        #
+#                                                                              #
+# **************************************************************************** #
+
+IP Address = Unique identifier
+	32 Bits
+	Public or Global IP address
+		Class A - 0-127
+		Class B - 128-191
+		Class C	- 192-223
+		Class D - 224
+	Private pr Local IP address
+		Class A - 10.0.0.0
+		Class B - 172.16.0.0
+		Class C - 192.168.0.0
+
+Subnet = sub network or smaller network within a larger network
+	Subnet Mask - 32-bit number that divides the IP address into network address and host address

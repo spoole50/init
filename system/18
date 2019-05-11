@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+#Find the command that kills ssh service
+
+su -c "kill $(ps -A | grep sshd | awk '{print $1}')" root

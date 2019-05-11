@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+#What command can you use to rename your system?
+
+su -c 'hostname new_hostname' root

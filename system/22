@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+#Find the command that add a new local user
+
+if [[ $UID -ne 0 ]]; then
+	echo "Run as root"
+	exit 1
+fi
+
+useradd -m -p test 42inittest

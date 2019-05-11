@@ -1,0 +1,5 @@
+traceroute google.com | grep nat | awk '{print $2,$3}' | tr -d "()" = nat 10.90.1.11
+
+NAT = Network Address Translation
+Allows a device like a router to act as a intermediate between the internet (public network) and local (private) network.
+Acts like a receptionist that will not relay calls unless requested. Knows where to route the relay calls if applicable.

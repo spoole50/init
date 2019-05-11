@@ -1,0 +1,6 @@
+What file contains the local DNS entries
+
+/etc/hosts
+
+man hosts
+local DNS settings helpful on system startup when DNS not running 

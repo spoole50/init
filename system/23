@@ -1,0 +1,7 @@
+Explain how connect yourself as new user. (With graphic session and ssh session)
+
+Graphic Session
+	Root user creates new user using command adduser
+
+ssh session
+	ssh in as root and create a new user also using command adduser
